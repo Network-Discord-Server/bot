@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "es6",
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@modular(logger)/*": [
+        "modules/@modular(logger)/*"
+      ],
+      "@modular(strings)/*": [
+        "modules/@modular(strings)/*"
+      ],
+      "@modular(challenges)/*": [
+        "modules/@modular(challenges)/*"
+      ],
+      "@modular(user)/*": [
+        "modules/@modular(user)/*"
+      ],
+      "@modular(error_manager)/*": [
+        "modules/@modular(error_manager)/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}

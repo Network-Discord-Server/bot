@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: network
+      POSTGRES_PASSWORD: network
+      POSTGRES_DB: network
+    volumes:
+      - ./.docker/psql:/var/lib/postgresql/data
